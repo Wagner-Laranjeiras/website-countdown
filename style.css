@@ -1,0 +1,94 @@
+:root {
+    --padding-smartphone: 4.5rem 2.6rem 0 2.6rem;
+    --padding-tablet: 10.8rem 11.3rem 0 11.3rem;
+    --padding-desktop: 6rem 37rem 0 37rem;
+}
+
+* {
+    font: inherit;
+    font-size: 62.5%;
+    color: #4d4d4d;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    background-color: #F5F5DC;
+    padding: var(--padding-smartphone);
+
+    background-image: url("assets/orange.png");
+    background-size: 450px;
+    background-repeat: no-repeat;
+    content: "";
+    inset: 0;
+    position: absolute;
+    background-position: top 48vh center;
+    z-index: -1;
+}
+
+.h1 { 
+    font-size: 3.7rem;
+    width: 22.4rem;
+    margin: 0 auto 5.8rem auto;
+ }
+
+.section {
+    margin: 0 auto;
+    display: flex;
+    width: 27rem;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.article {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: .8rem;
+}
+
+.h2 { font-size: 1.6rem;}
+
+.p { font-size: 2.8rem; }
+
+.semibold { font-weight: 600; }
+
+/* ///////////////////////////////////// Breakpoint Tablet */
+@media (min-width: 744px){
+    .container { 
+        padding: var(--padding-tablet);
+        background-size: 800px;
+        background-position: top 44vh center;
+    }
+
+    .h1 { 
+        font-size: 5rem;
+        width: 40.2rem;
+        margin: 0 auto 8rem auto;
+     }
+
+    .section { width: 52rem; }
+
+    .h2 { font-size: 3rem;}
+
+    .p { font-size: 2.8rem; }
+}
+
+/* ///////////////////////////////////// Breakpoint Desktop */
+@media (min-width: 1280px) {
+    .container { 
+        padding: var(--padding-desktop);
+        background-size: 600px;
+        background-position: top 54vh center;
+    }
+
+    .h1 { 
+        font-size: 6.7rem;
+        width: 53.8rem;
+     }
+
+    .h2 { font-size: 3.2rem;}
+
+    .p { font-size: 4rem; }
+}
