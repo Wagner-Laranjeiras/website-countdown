@@ -1,8 +1,8 @@
-console.log(`I'm glad you're here! The website will be launch in `);
+console.log(`I'm glad you're here! The website will be launch `);
 
 const countdown = () => {
     //function time variables
-    const countDate = new Date('May 10, 2023 00:00:00').getTime();
+    const countDate = new Date('May 12, 2023 18:00:00').getTime();
     const currentTime = new Date().getTime();
     const timeGap = countDate - currentTime;
 
